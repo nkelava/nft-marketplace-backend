@@ -1,5 +1,5 @@
 ## Improve security
-  - Use encripted connections
+  - [ ] Use encripted connections
     - Encrypted connections use Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocols to encrypt the data in transit, making it more difficult for attackers to intercept and access the data.
     -  e.g.
 
@@ -33,7 +33,7 @@
         ``` 
 
 ## Improve performance
-  - Use connection pooling.
+  - [ ] Use connection pooling.
     - When an application needs to connect to a database, it creates a new connection to the database server. Because that is a relatively expensive operation in terms of time and resources, connection pooling aims to minimize the number of connections that are created by reusing existing connections whenever possible.
     - e.g.
 
