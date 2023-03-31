@@ -10,7 +10,7 @@ services:
       POSTGRES_USER: ${DB_USER}
       POSTGRES_DB: ${DB_NAME}
     ports:
-      - ${DB_PORT}:5432
+      - ${DB_PORT}:${DB_PORT}
     volumes:
       - pgdata:/var/lib/postgresql/data
 
@@ -20,7 +20,7 @@ services:
     environment:
       SERVER_PORT: ${SERVER_PORT}
     ports:
-      - ${SERVER_PORT}:3001
+      - ${SERVER_PORT}:${SERVER_PORT}
     volumes:
       - ./:/app
       - /app/node_modules

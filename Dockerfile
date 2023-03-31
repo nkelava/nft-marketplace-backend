@@ -10,6 +10,6 @@ RUN pnpm install
 
 COPY . .
 
-EXPOSE 3001
+EXPOSE ${SERVER_PORT}
 
-CMD ["pnpm", "run", "dev"]
+CMD ["pnpm", "run", "start:dev"]
