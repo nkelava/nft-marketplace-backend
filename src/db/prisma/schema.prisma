@@ -26,7 +26,7 @@ model User {
   header_image String?
   refresh_tokens String[]
   role Role @default(USER)
-  created DateTime @default(now())
+  created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 
   @@map("users")
