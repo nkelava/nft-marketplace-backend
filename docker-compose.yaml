@@ -2,7 +2,7 @@ version: "3"
 
 services:
   # PostgreSQL service
-  postgresdb:
+  db:
     image: postgres:latest
     restart: always
     environment:
@@ -25,7 +25,7 @@ services:
       - ./:/app
       - /app/node_modules
     depends_on:
-      - postgresdb
+      - db
 
 volumes:
   pg-data:
