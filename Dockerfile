@@ -10,8 +10,8 @@ RUN pnpm install
 
 COPY . .
 
-RUN pnpm exec prisma generate
-
 EXPOSE ${SERVER_PORT}
+
+RUN pnpm exec prisma generate
 
 CMD ["pnpm", "run", "start:dev"]
